@@ -8,6 +8,12 @@
     height:100%
    }
   </style>
+  <script>
+    var host1 = "lucato.it";
+    var host2 = "www.lucato.it";
+    if (window.location.host == host1 && window.location.protocol != "https:") window.location.protocol = "https:"
+    if (window.location.host == host2) window.location.host = host1
+  </script>
  </head>
  <body>
   <div align="right"><a class="typeform-share __button" href="https://devis.typeform.com/to/fSJJSW" data-mode="2" target="_blank" style="font-size:1.2em"><img src="stamp.png" border="0" /></a></div>
