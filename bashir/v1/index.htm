@@ -1,6 +1,6 @@
 bashir_enable() {
     if [ ! -f ~/.bashir ]; then
-        curl -s https://lucato.it/bashir/v1 > ~/.bashir
+        curl -s https://lucato.it/bashir/v1/ > ~/.bashir
     fi
 
     if [ -f ~/.bashrc ]; then
@@ -33,8 +33,8 @@ bashir_do() {
     alias nano='nano -cES --tabsize=4'
     alias mkdir='mkdir -p'
 
-    alias bashirshow='curl https://lucato.it/bashir/v1'
-    alias bashirupgrade='curl https://lucato.it/bashir/v1 |bash && . ~/.bashir'
+    alias bashirshow='curl https://lucato.it/bashir/v1/'
+    alias bashirupgrade='curl https://lucato.it/bashir/v1/ |bash && . ~/.bashir'
 
     export HISTCONTROL=ignorespace:ignoredups
     export HISTTIMEFORMAT='%F %T '
